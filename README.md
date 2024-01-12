@@ -43,13 +43,13 @@ Les données en sortie ont une granularité : `session_utilisateurs` / `article`
 | num_prev_product_views| Int          | Le nombre de fois où l'article a été déjà vu dans des sessions précédentes |
 
 
-### Utilisation
+## Utilisation
 
-## Prérequis
+### Prérequis
 - Créer le fichier gsc_key.txt contenant les informations de connexion à google cloud storage
 
 
-## Paramètres du Job Spark
+### Paramètres du Job Spark
 
 Les data scientists peuvent lancer le job Spark en spécifiant les paramètres suivants :
 
@@ -65,8 +65,8 @@ Optionnel :
 
 - **GCS_SOURCE** : Chemin GCS des données sources( default="gs://projets_blent/ecom/blent-learning-user-ressources.s3.eu-west-3.amazonaws.com/projects/9c15cb")
 
-## Execution
-Pour exécuter le job Spark ,utilisez le script Python `ECOM_script.py` en spécifiant les paramètres ci dessus. 
+### Execution
+Pour exécuter le job Spark ,utilisez le script Python `ECOM_extract_script.py` en spécifiant les paramètres ci dessus. 
 
 Example de commande d'execution :
 `python3 ECOM_extract_script.py --DATE_START=2020-03-20 --DATE_END=2020-04-07`
