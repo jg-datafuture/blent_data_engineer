@@ -2,16 +2,15 @@
 
 ## Aperçu
 
-Ce référentiel contient un job Spark écrit en Scala ou PySpark pour extraire des données brutes et générer un jeu de données d'apprentissage pour les data scientists, à exécuter sur un cluster Hadoop. Le processus implique la spécification de détails de destination et de plages de dates pour extraire des événements pertinents. Les données proviennent d'un enregistrement historique sur environ 7 mois, réparti sur plusieurs fichiers et stocké dans Google Cloud Storage (GCS).
+Ce référentiel contient un job Spark écrit en PySpark pour extraire des données brutes et générer un jeu de données d'apprentissage pour les data scientists, à exécuter sur un cluster Hadoop. Le processus implique la spécification de détails de destination et de plages de dates pour extraire des événements pertinents.
 
 ## Source de Données
 
 ### Description
 
 La source de données comprend un historique d'événements enregistrés sur près de 7 mois, stocké dans plusieurs fichiers (un par mois). 
-Les données sont stockées dans GCS :
-gs://projets_blent/ecom/blent-learning-user-ressources.s3.eu-west-3.amazonaws.com/projects/9c15cb
 Les données ont été transférées vers GCS à l'aide du fichier TSV `ecom_proj.tsv`.
+Lien GCS : gs://projets_blent/ecom/blent-learning-user-ressources.s3.eu-west-3.amazonaws.com/projects/9c15cb
 
 ## Paramètres du Job Spark
 
@@ -27,7 +26,7 @@ Les data scientists peuvent lancer le job Spark en spécifiant les paramètres s
 
 ### Granularité
 
-Les données en sortie ont une granularité de `session_utilisateurs` / `article`.
+Les données en sortie ont une granularité : `session_utilisateurs` / `article`.
 
 ### Champs
 
@@ -49,7 +48,6 @@ Les données en sortie ont une granularité de `session_utilisateurs` / `article
 | duration             | Int          | Durée de la session                                    |
 | num_prev_sessions    | Int          | Le nombre de sessions précédentes                      |
 | num_prev_product_views| Int          | Le nombre de fois où l'article a été déjà vu dans des sessions précédentes |
-
 
 
 
