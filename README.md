@@ -51,7 +51,14 @@ Les données en sortie ont une granularité de `session_utilisateurs` / `article
 | num_prev_product_views| Int          | Le nombre de fois où l'article a été déjà vu dans des sessions précédentes |
 
 
-## Utilisation
 
-Pour exécuter le job Spark, utilisez le script Python `ECOM_script` avec les paramètres spécifiés. 
+
+### Utilisation
+
+## Prérequis
+- Créer le fichier gsc_key.txt contenant les informations de connexion à google cloud storage
+- Connecteur gcs
+
+## Execution
+Pour exécuter le job Spark : utilisez le script Python `ECOM_script` avec les paramètres spécifiés. 
 De plus, un notebook Jupyter (`ECOM_script.ipynb`) est fourni à titre de référence.
