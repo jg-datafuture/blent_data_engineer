@@ -46,7 +46,7 @@ Les données en sortie ont une granularité : `session_utilisateurs` / `article`
 ## Utilisation
 
 ### Prérequis
-- Créer le fichier gsc_key.txt contenant les informations de connexion à google cloud storage
+- Ajouter le fichier gsc_key.txt contenant les informations de connexion à google cloud storage : par défaut dans "/home/admin/gsc_key.txt"
 
 
 ### Paramètres du Job Spark
